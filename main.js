@@ -7,6 +7,7 @@ const csvWriter = createCsvWriter({
   header: [
   {id: 'word', title: 'Word'},
   {id: 'count', title: 'Count'},
+  {id: 'file', title: 'File'},
   ]
 });
 
@@ -23,10 +24,10 @@ fs.createReadStream('sample.csv')
     files.forEach(file => {
         data = fs.readFileSync(dir+'/'+file, 'utf8');
         count += (data.match(regex) || []).length;
+        let csv_data = {word: row.word,count: count,file: file}
+        csv_data_object.push(csv_data);
     })
     console.log(count)
-    let csv_data = {word: row.word,count: count}
-    csv_data_object.push(csv_data);
   })
   .on('end',()=> {
     console.log(csv_data_object)
