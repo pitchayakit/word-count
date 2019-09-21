@@ -15,9 +15,9 @@ fs.createReadStream('sample.csv')
     let files = fs.readdirSync(dir);
     let word = row.word
     let regex = new RegExp("\\b("+ word + ")\\b","g");
-    let count = 0;
 
     files.forEach(file => {
+        let count = 0;
         data = fs.readFileSync(dir+'/'+file, 'utf8');
         count += (data.match(regex) || []).length;
         //let csv_data = {word: row.word,count: count,file: file}
@@ -27,7 +27,7 @@ fs.createReadStream('sample.csv')
             console.log('The "data to append" was appended to file! : ' + csv_data);
         });
     })
-    console.log(count)
+    //console.log(count)
   })
 
 
