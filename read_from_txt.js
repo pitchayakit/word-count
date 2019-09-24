@@ -3,23 +3,22 @@ const csv = require('csv-parser');
 
 let fields = ['word','count','file']
 let newLine= "\r\n";
-fs.writeFile('output.csv', fields+newLine, function (err) {
+fs.writeFile('output/output.csv', fields+newLine, function (err) {
   if (err) throw err;
   console.log('file write');
 });
 
-fs.createReadStream('sample.csv')  
+fs.createReadStream('input/word.csv')  
   .pipe(csv())
   .on('data', (row) => {
-    let dir = 'txt'
+    let dir = 'input/txt'
     let files = fs.readdirSync(dir);
     let word = row.word
-    let regex = new RegExp("\\b("+ word + ")\\b","g");
+    let regex = new RegExp(word,"ig");
 
     files.forEach(file => {
-        let count = 0;
         data = fs.readFileSync(dir+'/'+file, 'utf8');
-        count += (data.match(regex) || []).length;
+        let count = (data.match(regex) || []).length;
         //let csv_data = {word: row.word,count: count,file: file}
         let csv_data = row.word + ',' + count + ',' + file
         fs.appendFile('output.csv', csv_data + newLine, function (err) {
@@ -29,9 +28,4 @@ fs.createReadStream('sample.csv')
     })
     //console.log(count)
   })
-
-
-
-
-
-
+  
