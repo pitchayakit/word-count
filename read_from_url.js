@@ -6,7 +6,7 @@ const path = require('path');
 let fields = ['word','count','file']
 let newLine= "\r\n";
 
-fs.writeFile('output.csv', fields+newLine, function (err) {
+fs.writeFile('output/output.csv', fields+newLine, function (err) {
   if (err) throw err;
   console.log('file write');
 });

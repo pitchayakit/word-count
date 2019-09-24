@@ -163,7 +163,7 @@ Wikipedia
 <option value="id" lang="id">Bahasa Indonesia</option>
 <option value="it" lang="it">Italiano</option>
 <option value="he" lang="he">עברית</option><!-- ʿIvrit -->
-<option value="ka" lang="ka">ქართულ���</option><!-- Kartuli -->
+<option value="ka" lang="ka">ქართული</option><!-- Kartuli -->
 <option value="la" lang="la">Latina</option>
 <option value="lt" lang="lt">Lietuvių</option>
 <option value="hu" lang="hu">Magyar</option>
@@ -277,7 +277,7 @@ articles
 <li><a href="//az.wikipedia.org/" lang="az">Azərbaycanca</a></li>
 <li><a href="//bg.wikipedia.org/" lang="bg" title="Bǎlgarski">Български</a></li>
 <li><a href="//zh-min-nan.wikipedia.org/" lang="nan">Bân-lâm-gú / Hō-ló-oē</a></li>
-<li><a href="//be.wikipedia.org/" lang="be" title="Belaruskaya (Akademichnaya)">Беларуская (��кадэмічная)</a></li>
+<li><a href="//be.wikipedia.org/" lang="be" title="Belaruskaya (Akademichnaya)">Беларуская (А��адэмічная)</a></li>
 <li><a href="//ca.wikipedia.org/" lang="ca">Català</a></li>
 <li><a href="//cs.wikipedia.org/" lang="cs" title="čeština">Čeština</a></li>
 <li><a href="//da.wikipedia.org/" lang="da">Dansk</a></li>
@@ -339,7 +339,7 @@ articles
 <ul>
 <li><a href="//af.wikipedia.org/" lang="af">Afrikaans</a></li>
 <li><a href="//als.wikipedia.org/" lang="gsw">Alemannisch</a></li>
-<li><a href="//am.wikipedia.org/" lang="am" title="Āmariññā">አ��ርኛ</a></li>
+<li><a href="//am.wikipedia.org/" lang="am" title="Āmariññā">አማ���ኛ</a></li>
 <li><a href="//an.wikipedia.org/" lang="an">Aragonés</a></li>
 <li><a href="//ast.wikipedia.org/" lang="ast">Asturianu</a></li>
 <li><a href="//bn.wikipedia.org/" lang="bn" title="Bangla">বাংলা</a></li>
