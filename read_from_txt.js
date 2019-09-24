@@ -21,7 +21,7 @@ fs.createReadStream('input/word.csv')
         let count = (data.match(regex) || []).length;
         //let csv_data = {word: row.word,count: count,file: file}
         let csv_data = row.word + ',' + count + ',' + file
-        fs.appendFile('output.csv', csv_data + newLine, function (err) {
+        fs.appendFile('output/output.csv', csv_data + newLine, function (err) {
             if (err) throw err;
             console.log('The "data to append" was appended to file! : ' + csv_data);
         });
